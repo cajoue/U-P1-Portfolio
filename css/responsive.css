@@ -1,0 +1,55 @@
+/* MEDIA QUERIES */
+/*responsive design to manage appearance on different devices*/
+
+
+/* Medium Viewports */
+
+
+@media screen and (min-width: 381px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 465px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  svg#logo {
+  width: 64px;
+  height: 64px;
+}
+}
+
+@media screen and (min-width: 550px) {
+  .header-content {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+.navigation {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+      /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+}
+}
+
+
+/* Large Viewports */
+
+
+@media screen and (min-width: 600px) {
+.navigation {
+  /* This aligns items to the end line on main-axis */
+  justify-content: flex-end;
+}
+
+svg#logo {
+  width: 96px;
+  height: 96px;
+}
+}

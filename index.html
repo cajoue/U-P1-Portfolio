@@ -7,13 +7,17 @@
 	<meta name="description" content="portfolio of projects created for udacity front-end nanodegree programme">
 	<meta name="author" content="Valerie Yallup">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,300,100">
+	<link href="http://weloveiconfonts.com/api/?family=zocial" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<script href="js/picturefill.min.js"></script>
 </head>
 <body>
 	<div class="page-wrapper">
 
 		<header>
-			<div class="header-inner">
+			<div class="flex-header">
 				<div class="header-logo">
 					<a href="#" title="Home">
 						<svg id="logo" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 0 48 48" width="48" version="1.1">
@@ -30,72 +34,84 @@
 					<h1>Valerie Yallup</h1>
 					<h4>Front-end Ninjaling</h4>
 				</div>
+				<a class="mini-nav-button" href="#primary-nav">Menu</a>
 			</div>
 		</header>
 
-		<section class="freshly-pressed">
+		<!-- TODO: navigation to be be hidden off canvas at first -->
+		<nav id="primary-nav">
+			<ul>
+				<li class="home"><a class="active" href="#">Home</a></li>
+				<li class="portfolio"><a href="#">Portfolio</a></li>
+				<li class="about"><a href="#">About</a></li>
+			</ul>
+		</nav>
 
-			<figure class="freshly-pressed-item">
-				<picture>
-					<source media="(min-width: 750px)" srcset="images/cockatoos-large_1x.jpg, images/cockatoos-large_2x.jpg 2x" />
-					<source media="(min-width: 500px)" srcset="images/cockatoos-medium.jpg" />
-					<img src="images/cockatoos-small.jpg" alt="Screenshot of most recent project">
-				</picture>
-				<figcaption>Hot off the press - Portfolio Project</figcaption>
-			</figure>
+		<main>
 
-		</section>
+			<section class="freshly-pressed">
 
-		<section class="featured-work">
+				<figure class="freshly-pressed-item">
+					<picture>
+						<source media="(min-width: 600px)" srcset="images/portfolio-screen-large_1x.jpg, images/portfolio-screen-large_2x.jpg 2x" />
+						<source media="(min-width: 400px)" srcset="images/portfolio-screen-medium.jpg" />
+						<img src="images/portfolio-screen-small.jpg" alt="Screenshot of most recent project">
+					</picture>
+					<figcaption>This Portfolio Project</figcaption>
+					<p>Hot off the press</p>
+					<a class="link-decoration" href="https://github.com/" target="_blank">https://github.com/</a>
+				</figure>
 
-			<h2 class="section-title">Featured Work</h2>
+			</section> <!-- End freshly-pressed -->
 
-			<figure class="featured-work-item">
-				<picture>
-					<source media="(min-width: 750px)" srcset="images/cockatoos-large_1x.jpg, images/cockatoos-large_2x.jpg 2x" />
-					<source media="(min-width: 500px)" srcset="images/cockatoos-medium.jpg" />
-					<img src="images/cockatoos-small.jpg" alt="Screenshot of most recent project">
-				</picture>
-				<figcaption>Sometimes words are enough! - Resume Project</figcaption>
-			</figure>
+			<section class="featured-work">
 
-			<figure class="featured-work-item">
-				<picture>
-					<source media="(min-width: 750px)" srcset="images/cockatoos-large_1x.jpg, images/cockatoos-large_2x.jpg 2x" />
-					<source media="(min-width: 500px)" srcset="images/cockatoos-medium.jpg" />
-					<img src="images/cockatoos-small.jpg" alt="Screenshot of most recent project">
-				</picture>
-				<figcaption>Olde Worlde - Arcade Game Project</figcaption>
-			</figure>
+				<h2 class="section-title">Featured Work</h2>
 
-			<figure class="featured-work-item">
-				<picture>
-					<source media="(min-width: 750px)" srcset="images/cockatoos-large_1x.jpg, images/cockatoos-large_2x.jpg 2x" />
-					<source media="(min-width: 500px)" srcset="images/cockatoos-medium.jpg" />
-					<img src="images/cockatoos-small.jpg" alt="Screenshot of most recent project">
-				</picture>
-				<figcaption>Faster Pussy Cat, Kill Kill - Website Optimization Project</figcaption>
-			</figure>
+				<figure class="featured-work-item">
+					<picture>
+						<source media="(min-width: 600px)" srcset="images/cockatoos-large_1x.jpg, images/cockatoos-large_2x.jpg 2x" />
+						<source media="(min-width: 400px)" srcset="images/cockatoos-medium.jpg" />
+						<img src="images/cockatoos-small.jpg" alt="Screenshot of most recent project">
+					</picture>
+					<figcaption>Resume</figcaption>
+					<p>Sometimes words are enough! </p>
+					<a href="https://github.com/" target="_blank">https://github.com/</a>
+				</figure>
 
+				<figure class="featured-work-item">
+					<p class="icon-font">🐸</p>
+					<figcaption>Arcade Game</figcaption>
+					<p>Ribbet!</p>
+					<a href="https://github.com/" target="_blank">https://github.com/</a>
+				</figure>
 
+				<figure class="featured-work-item">
+					<picture>
+						<source media="(min-width: 600px)" srcset="images/unsplash-dog_Will-Langenberg-large_1x.jpeg, images/unsplash-dog_Will-Langenberg-large_2x.jpeg 2x" />
+						<source media="(min-width: 400px)" srcset="images/unsplash-dog_Will-Langenberg-medium.jpeg" />
+						<img src="images/unsplash-dog_Will-Langenberg-small.jpeg" alt="Photo of a dog">
+					</picture>
+					<figcaption>Website Optimization</figcaption>
+					<p>The internet needs more dogs.</p>
+					<a href="https://unsplash.com/wlangenberg" target="_blank">Photo of dog from Unsplash.com</a>
+				</figure>
 
+			</section> <!-- End featured-work -->
 
+			<!-- TODO: Try to make a sticky footer -->
+			<footer>
+				<div id="social">
+					<a href="https://twitter.com" class="zocial-twitter"></a>
+					<a href="https://www.facebook.com" class="zocial-linkedin"></a>
+					<a href="https://plus.google.com/" class="zocial-github"></a>
+					<a href="http://codepen.io"><i class="fa fa-codepen"></i></a>
+				</div>
+			</footer>
 
+		</main>
 
-		</section>
-
-
-
-
-
-		<footer>
-
-			<p>social media icons</p>
-
-		</footer>
-
-
-	</div>
+	</div> <!-- End page-wrapper -->
 
 </body>
 </html>
