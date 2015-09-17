@@ -40,10 +40,10 @@
 
 		<!-- TODO: navigation to be be hidden off canvas at first -->
 		<nav id="primary-nav">
-			<ul>
-				<li class="home"><a class="active" href="#">Home</a></li>
-				<li class="portfolio"><a href="#">Portfolio</a></li>
-				<li class="about"><a href="#">About</a></li>
+			<ul class="nav-list">
+				<li class="nav-item home"><a class="active" href="#">Home</a></li>
+				<li class="nav-item portfolio"><a href="#">Portfolio</a></li>
+				<li class="nav-item about"><a href="#">About</a></li>
 			</ul>
 		</nav>
 
@@ -53,7 +53,7 @@
 
 				<figure class="freshly-pressed-item">
 					<picture>
-						<source media="(min-width: 600px)" srcset="images/portfolio-screen-large_1x.jpg, images/portfolio-screen-large_2x.jpg 2x" />
+						<source media="(min-width: 600px)" srcset="images/portfolio-screen-w-large_1x.jpg, images/portfolio-screen-w-large_2x.jpg 2x" />
 						<source media="(min-width: 400px)" srcset="images/portfolio-screen-medium.jpg" />
 						<img src="images/portfolio-screen-small.jpg" alt="Screenshot of most recent project">
 					</picture>
@@ -68,35 +68,42 @@
 
 				<h2 class="section-title">Featured Work</h2>
 
-				<figure class="flex-feature-item">
-					<picture>
-						<source media="(min-width: 600px)" srcset="images/cockatoos-large_1x.jpg, images/cockatoos-large_2x.jpg 2x" />
-						<source media="(min-width: 400px)" srcset="images/cockatoos-medium.jpg" />
-						<img src="images/cockatoos-small.jpg" alt="Screenshot of most recent project">
-					</picture>
-					<figcaption>My<br>Resume</figcaption>
-					<p>Sometimes words are enough! </p>
+				<div class="flex-feature-item">
+					<figure>
+						<picture>
+							<source media="(min-width: 600px)" srcset="images/cockatoos-large_1x.jpg, images/cockatoos-large_2x.jpg 2x" />
+							<source media="(min-width: 400px)" srcset="images/cockatoos-medium.jpg" />
+							<img src="images/cockatoos-small.jpg" alt="Screenshot of most recent project">
+						</picture>
+						<figcaption>My<br>Resume</figcaption>
+					</figure>
+					<p>Work in progress</p>
 					<a href="https://github.com/" target="_blank">https://github.com/</a>
-				</figure>
+				</div>
 
-				<figure class="flex-feature-item">
-					<p class="icon-font-boss">🐸</p>
-					<p class="icon-font">🐸 🐸 🐸</p>
-					<figcaption>Arcade<br>Game</figcaption>
+				<div class="flex-feature-item">
+					<figure>
+						<p class="icon-font-boss">🐸</p>
+						<p class="icon-font">🐸 🐸 🐸</p>
+						<figcaption>Arcade<br>Game</figcaption>
+					</figure>
 					<p>Ribbet!</p>
 					<a href="https://github.com/" target="_blank">https://github.com/</a>
-				</figure>
+				</div>
 
-				<figure class="flex-feature-item">
-					<picture>
-						<source media="(min-width: 600px)" srcset="images/unsplash-dog_Will-Langenberg-large_1x.jpeg, images/unsplash-dog_Will-Langenberg-large_2x.jpeg 2x" />
-						<source media="(min-width: 400px)" srcset="images/unsplash-dog_Will-Langenberg-medium.jpeg" />
-						<img src="images/unsplash-dog_Will-Langenberg-small.jpeg" alt="Photo of a dog">
-					</picture>
-					<figcaption>Website Optimization</figcaption>
-					<p>The internet needs more dogs.</p>
-					<a href="https://unsplash.com/wlangenberg" target="_blank">Photo of dog from Unsplash.com</a>
-				</figure>
+				<div class="flex-feature-item">
+					<figure>
+						<picture>
+							<source media="(min-width: 600px)" srcset="images/unsplash-dog_Will-Langenberg-large_1x.jpeg, images/unsplash-dog_Will-Langenberg-large_2x.jpeg 2x" />
+							<source media="(min-width: 400px)" srcset="images/unsplash-dog_Will-Langenberg-medium.jpeg" />
+							<img src="images/unsplash-dog_Will-Langenberg-small.jpeg" alt="Photo of a dog">
+						</picture>
+						<figcaption>Website Optimization</figcaption>
+
+					</figure>
+					<p>More dogs please</p>
+					<a href="https://unsplash.com/wlangenberg" target="_blank">https://unsplash.com</a>
+				</div>
 
 			</section> <!-- End featured-work -->
 
