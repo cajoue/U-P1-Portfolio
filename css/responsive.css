@@ -7,9 +7,22 @@
 *
 */
 
-@media screen and (min-width: 381px) {
+@media screen and (min-width: 400px) {
 	h1 {
-		font-size: 36px;
+		font-size: 2em;
+	}
+
+	h4 {
+		font-size: 1.2em;
+	}
+
+	.mini-nav-button svg {
+		width: 2em;
+	}
+
+	svg#logo {
+		width: 3em;
+		height: 3em;
 	}
 }
 
@@ -24,12 +37,14 @@
 		margin: 0 auto;
 		z-index: 10;
 	    background-color: #fff;
-	    position: absolute;
+	    position: relative;
 	    /* This transform should bring the drawer on canvas. */
 	    -webkit-transform: translate(0, 0);
 	    transform: translate(0, 0);
 	    /* animate the drawer. */
 	    transition: transform 0.3s ease;
+	    display: block;
+	    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 	}
 
 	.nav-list {
@@ -40,20 +55,21 @@
 	}
 
 	.nav-item {
-		flex: 0 1 150px;
+		flex: 0 1 100px;
 		font-size: 1.6em;
 		line-height: 1.6em;
+		box-shadow: none;
 	}
 }
 
-@media screen and (min-width: 468px) {
+@media screen and (min-width: 500px) {
 	h1 {
 		font-size: 48px;
 	}
 
 	svg#logo {
-	width: 64px;
-	height: 64px;
+		width: 4em;
+		height: 4em;
 	}
 }
 
@@ -75,7 +91,7 @@
 	}
 
 	svg#logo {
-		width: 96px;
-		height: 96px;
+		width: 5em;
+		height: 5em;
 	}
 }
