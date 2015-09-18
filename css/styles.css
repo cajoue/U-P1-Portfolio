@@ -222,7 +222,7 @@
 	color: #f8981c;
 }
 
- /*
+/*
  *
  * Main content
  *
@@ -303,6 +303,57 @@
 	font-family: u1f400;
 	margin: 0 auto;
  }
+
+
+/*
+ *
+ * Word flex for resume box
+ *
+ */
+
+.word-flex {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: baseline;
+	font-family: 'Droid Serif', serif;
+	font-size: 18px;
+	color: #bcbbbb;
+	font-weight: 700;
+	padding: 0.7em 1em;
+	justify-content: space-between;
+	max-width: 280px;
+}
+
+.word-flex div {
+	padding: 0.1em;
+}
+
+.upper {
+	text-transform: uppercase;
+}
+
+.big-font {
+	font-size: 2em;
+}
+
+.small-font {
+	font-size: 0.8em;
+}
+
+.olive {
+	color: #747704;
+}
+
+.orange {
+	color: #f8981c;
+}
+
+.rotate {
+	-webkit-transform: rotate(-90deg);
+}
+
+
 
  /*
  *
