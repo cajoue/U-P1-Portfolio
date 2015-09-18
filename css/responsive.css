@@ -8,75 +8,75 @@
 */
 
 @media screen and (min-width: 400px) {
-	h1 {
-		font-size: 2em;
-	}
+    h1 {
+        font-size: 2em;
+    }
 
-	h4 {
-		font-size: 1.2em;
-	}
+    h4 {
+        font-size: 1.2em;
+    }
 
-	.mini-nav-button svg {
-		width: 2em;
-	}
+    .mini-nav-button svg {
+        width: 2em;
+    }
 
-	svg#logo {
-		width: 3em;
-		height: 3em;
-	}
+    svg#logo {
+        width: 3em;
+        height: 3em;
+    }
 }
 
 /* Navigation appears and is horizontal */
 @media screen and (min-width: 450px) {
-	.mini-nav-button {
-		display: none;
-	}
+    .mini-nav-button {
+        display: none;
+    }
 
-	.top-nav {
-		width: 100%;
-		margin: 0 auto;
-		z-index: 10;
-	    background-color: #fff;
-	    position: relative;
+    .top-nav {
+        width: 100%;
+        margin: 0 auto;
+        z-index: 10;
+        background-color: #fff;
+        position: relative;
 	    /* This transform should bring the drawer on canvas. */
-	    -webkit-transform: translate(0, 0);
-	    transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
 	    /* animate the drawer. */
-	    transition: transform 0.3s ease;
-	    display: block;
-	    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-	}
+        transition: transform 0.3s ease;
+        display: block;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26)
+    }
 
-	.nav-list {
-		width: 100%;
-		flex-direction: row;
-		flex-flow: row wrap;
-		justify-content: space-around;
-	}
+    .nav-list {
+        width: 100%;
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
 
-	.nav-item {
-		flex: 0 1 100px;
-		font-size: 1.6em;
-		line-height: 1.6em;
-		box-shadow: none;
-	}
+    .nav-item {
+        flex: 0 1 100px;
+        font-size: 1.6em;
+        line-height: 1.6em;
+        box-shadow: none;
+    }
 }
 
 @media screen and (min-width: 500px) {
-	h1 {
-		font-size: 48px;
-	}
+    h1 {
+        font-size: 48px;
+    }
 
-	svg#logo {
-		width: 4em;
-		height: 4em;
-	}
+    svg#logo {
+        width: 4em;
+        height: 4em;
+    }
 }
 
 @media screen and (min-width: 550px) {
-	.header-content {
-		padding-top: 15px;
-	}
+    .header-content {
+        padding-top: 15px;
+    }
 }
 
 /*
@@ -86,12 +86,12 @@
 */
 
 @media screen and (min-width: 600px) {
-	.nav-list {
-		justify-content: flex-end;
-	}
+    .nav-list {
+        justify-content: flex-end;
+    }
 
-	svg#logo {
-		width: 5em;
-		height: 5em;
-	}
+    svg#logo {
+        width: 5em;
+        height: 5em;
+    }
 }
