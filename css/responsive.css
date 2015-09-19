@@ -38,24 +38,37 @@
         z-index: 10;
         background-color: #fff;
         position: relative;
-	    /* This transform should bring the drawer on canvas. */
+        /* This transform should bring the drawer on canvas. */
         -webkit-transform: translate(0, 0);
-        transform: translate(0, 0);
-	    /* animate the drawer. */
-        transition: transform 0.3s ease;
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+        /* animate the drawer. */
+        -webkit-transition: -webkit-transform 0.3s ease;
+                transition: transform 0.3s ease;
         display: block;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26)
     }
 
     .nav-list {
         width: 100%;
-        flex-direction: row;
-        flex-flow: row wrap;
-        justify-content: space-around;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
     }
 
     .nav-item {
-        flex: 0 1 100px;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 1 100px;
+            -ms-flex: 0 1 100px;
+                flex: 0 1 100px;
         font-size: 1.6em;
         line-height: 1.6em;
         box-shadow: none;
@@ -87,7 +100,10 @@
 
 @media screen and (min-width: 600px) {
     .nav-list {
-        justify-content: flex-end;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
     }
 
     svg#logo {

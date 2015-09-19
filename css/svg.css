@@ -1,58 +1,10 @@
- /* svg logo:hover is here as it needs to go through SVG validation not CSS */
+ /* svg:active #lettering * // is here as it needs to go through SVG validation not CSS */
 
-
-
-/* these three methods work but all error message:
-Unknown pseudo-element or pseudo-class :hover
-followed by Parse Error [empty string] */
-/* svg#logo:hover g{
-	fill: #fff;
- }*/
-
-/* yes */
-/*svg:hover #lettering * {
-  fill: white;
-}*/
-
-/* yes */
-a:hover #lettering * {
-  fill: white;
+svg:active #lettering * {
+  fill: #fff;
 }
 
-
-
-/*
-*
-* Try out svg styles here instead of main html
-*
-*/
-
-/*Nope*/
-/*#logo svg * {
-  fill: #f00;
-}*/
-
-/* yes */
-/*a:hover > svg * {
-  fill: #0f0;
-}*/
-
-/* doesn't work */
-/*#logo a:hover svg g{
-	fill: #fff;
- }*/
-
-/*Original Hamburger menu icon -->
-                <a id="menu" class="mini-nav-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 0 48 48" width="48" version="1.1">
-                        <style>
-                            .s0 {
-                                fill: #ff7f2a;
-                            }
-                        </style>
-                        <rect ry="1" rx="1" y="38" x="0" height="10" width="48" fill="#ff7f2a" />
-                        <rect ry="1" rx="1" y="19" x="0" height="10" width="48" fill="#ff7f2a" />
-                        <rect ry="1" rx="1" y="0" x="0" height="10" width="48" fill="#ff7f2a" />
-                    </svg>
-                </a>*/
+ a#menu:active * {
+    fill: #747704;
+ }
 
