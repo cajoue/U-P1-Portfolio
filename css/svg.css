@@ -1,10 +1,13 @@
- /* svg:active #lettering * // is here as it needs to go through SVG validation not CSS */
+/* svg:active #lettering is here as it needs to go through SVG validation not CSS */
+
+/* Please see my reasoning for this separate file below (I submitted a question to the forum asking for help - thanks to Susan and John for their advice) */
+
+/* https://discussions.udacity.com/t/css-validator-doesnt-accept-fill-as-an-svg-property/32332 */
 
 svg:active #lettering * {
-  fill: #fff;
+    fill: #fff;
 }
 
- a#menu:active * {
+a#menu:active * {
     fill: #747704;
- }
-
+}

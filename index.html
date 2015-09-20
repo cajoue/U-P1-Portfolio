@@ -7,7 +7,7 @@
     <title>My Udacity Portfolio</title>
     <meta name="description" content="portfolio of projects created for udacity front-end nanodegree programme">
     <meta name="author" content="Valerie Yallup">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,300,100">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,300,100" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet">
     <link href="http://weloveiconfonts.com/api/?family=zocial" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -111,11 +111,11 @@
                     <a href="https://github.com/" target="_blank">https://github.com/</a>
                 </div>
 
+                <!-- I've reduced the number of image size choices here as the max-width in testing is 241px so for 2x displays i will only need the medium image as the largest option. In fact, the image size itself is not so much dependent on the viewport-width so much as the flex-feature-item width. My natural image width choices are 320 and 500, so, as display max is 241 I will use 320-small for all cases other than 2x which will use the 500-medium.  -->
                 <div class="flex-feature-item fav-2">
                     <figure>
                         <picture>
-                            <source media="(min-width: 600px)" srcset="images/unsplash-dog_Will-Langenberg-large_1x.jpeg, images/unsplash-dog_Will-Langenberg-large_2x.jpeg 2x" />
-                            <source media="(min-width: 400px)" srcset="images/unsplash-dog_Will-Langenberg-medium.jpeg" />
+                            <source media="(min-width: 300px)" srcset="images/unsplash-dog_Will-Langenberg-small.jpeg 1x, images/unsplash-dog_Will-Langenberg-medium.jpeg 2x" />
                             <img src="images/unsplash-dog_Will-Langenberg-small.jpeg" alt="Photo of a dog">
                         </picture>
                         <figcaption>Website Optimization</figcaption>
@@ -126,7 +126,7 @@
             </section>
             <!-- End featured-work -->
         </main>
-        <!-- TODO: Try to make a sticky footer. Hmmm would be easier without the off-canvas menu -->
+        <!-- TODO: Try to make a sticky footer. Hmmm would be easier without the off-canvas menu. Need more experience. -->
         <footer>
             <div id="social">
                 <a href="https://twitter.com" class="zocial-twitter" target="_blank"></a>
@@ -154,4 +154,5 @@
         });
     </script>
 </body>
+
 </html>
