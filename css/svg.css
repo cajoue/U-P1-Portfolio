@@ -4,10 +4,12 @@
 
 /* https://discussions.udacity.com/t/css-validator-doesnt-accept-fill-as-an-svg-property/32332 */
 
-svg:active #lettering * {
-    fill: #fff;
+/* tried to do this in many ways - but this is the only combo that i could get to work */
+
+.logo svg:active path.letter {
+  fill: #fff;
 }
 
-a#menu:active * {
-    fill: #747704;
+.mini-menu svg:active * {
+  fill: #e74e3c;
 }

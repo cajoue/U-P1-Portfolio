@@ -16,11 +16,11 @@
         font-size: 1.2em;
     }
 
-    .mini-nav-button svg {
+    .mini-nav-button{
         width: 2em;
     }
 
-    svg#logo {
+    .icon {
         width: 3em;
         height: 3em;
     };
@@ -28,7 +28,7 @@
 
 /* Navigation appears and is horizontal */
 @media screen and (min-width: 450px) {
-    .mini-nav-button {
+    .mini-menu {
         display: none;
     }
 
@@ -80,7 +80,7 @@
         font-size: 48px;
     }
 
-    svg#logo {
+    .icon {
         width: 4em;
         height: 4em;
     };
@@ -106,7 +106,7 @@
         justify-content: flex-end;
     }
 
-    svg#logo {
+    .icon {
         width: 5em;
         height: 5em;
     };
